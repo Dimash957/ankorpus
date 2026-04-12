@@ -1,0 +1,15 @@
+{
+  "dataset": "ankorpus",
+  "version": "7.0",
+  "language": "kk",
+  "records": [
+    {
+      "id": "demo-001",
+      "title": "Көктемгі дауыс",
+      "artist": "Роза Рымбаева",
+      "year": 1982,
+      "genre": "поп",
+      "tokens": ["қала", "көктем", "жүрек", "әуен"]
+    }
+  ]
+}

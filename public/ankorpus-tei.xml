@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="kk">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Әндер корпусы: үлгілік TEI үзіндісі</title>
+        <author>Әндер корпусы зерттеу тобы</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Абай атындағы ҚазҰПУ</publisher>
+        <availability status="free">CC BY-NC 4.0</availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><date when="2026">2026</date></bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1 type="song" n="demo-001">
+        <lg type="verse">
+          <l>
+            <w xml:lang="kk" lemma="қала" pos="NOUN" ne="LOC">Қала</w>
+            <w xml:lang="kk" lemma="үнсіз" pos="ADJ" ne="O">үнсіз</w>
+            <w xml:lang="kk" lemma="ояну" pos="VERB" ne="O">оянады</w>
+          </l>
+        </lg>
+      </div1>
+    </body>
+  </text>
+</TEI>

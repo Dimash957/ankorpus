@@ -1,0 +1,5 @@
+# sent_id = demo-001
+# text = Қала үнсіз оянады
+1	Қала	қала	NOUN	_	_	2	nsubj	_	NE=LOC
+2	үнсіз	үнсіз	ADJ	_	_	3	advmod	_	_
+3	оянады	ояну	VERB	_	Mood=Ind|Tense=Pres|Person=3	0	root	_	_
