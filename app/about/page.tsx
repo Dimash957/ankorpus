@@ -8,9 +8,10 @@ export const metadata: Metadata = {
 };
 
 const team = [
-  { name: "Айдана Қасым", role: "Жоба жетекшісі, корпус лингвистикасы", org: "Абай атындағы ҚазҰПУ" },
-  { name: "Ернат Сәрсен", role: "NLP инженері, аннотация pipeline", org: "Қолданбалы лингвистика зертханасы" },
-  { name: "Дана Қуат", role: "Мәтін белгілеу үйлестірушісі", org: "KazCorpus Lab" },
+  { name: "Ермекова Тыныштық Нұрдәулетқызы", role: "Жоба жетекшісі", org: "" },
+  { name: "Алшынова Гүлзия Сәкенқызы", role: "", org: "" },
+  { name: "Тазабек Мөлдір", role: "", org: "" },
+  { name: "Тілеулинова Жұлдыз", role: "", org: "" },
 ];
 
 const publications = [
@@ -74,23 +75,23 @@ export default function AboutPage() {
       <section className="mb-8 rounded-3xl border border-subtle bg-bg-card/70 p-6">
         <h2 className="text-2xl font-semibold text-text-primary">Жоба сипаттамасы</h2>
         <p className="mt-3 max-w-4xl text-sm leading-7 text-text-secondary">
-          «Әндер корпусы» қазақ тіліндегі поп музыка мәтіндерін зерттеуге арналған лингвистикалық
+          «Ән мәтіндерінің корпусы» қазақ тіліндегі поп музыка мәтіндерін зерттеуге арналған лингвистикалық
           инфрақұрылым. Негізгі мақсат: сөзжасам, стильдік динамика, жанрлық айырмашылық және
           уақыттық өзгерістерді бір ортада талдау.
         </p>
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-4 text-2xl font-semibold text-text-primary">Зерттеу тобы</h2>
-        <div className="grid gap-4 md:grid-cols-3">
+        <h2 className="mb-4 text-2xl font-semibold text-text-primary">Авторлар</h2>
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {team.map((member) => (
             <article key={member.name} className="rounded-3xl border border-subtle bg-bg-card/70 p-5">
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-accent-primary/80 to-accent-secondary/70 text-lg font-semibold text-white">
                 {member.name.slice(0, 1)}
               </div>
               <h3 className="text-lg font-semibold text-text-primary">{member.name}</h3>
-              <p className="mt-1 text-sm text-text-secondary">{member.role}</p>
-              <p className="mt-3 text-xs text-text-secondary">{member.org}</p>
+              {member.role ? <p className="mt-1 text-sm text-text-secondary">{member.role}</p> : null}
+              {member.org ? <p className="mt-3 text-xs text-text-secondary">{member.org}</p> : null}
             </article>
           ))}
         </div>

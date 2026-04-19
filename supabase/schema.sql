@@ -1,4 +1,4 @@
--- Әндер корпусы: Supabase schema
+-- Ән мәтіндерінің корпусы: Supabase schema
 create extension if not exists pgcrypto;
 
 create table if not exists public.profiles (

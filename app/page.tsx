@@ -8,12 +8,12 @@ import { HeroFloatingCards } from "@/components/hero-floating-cards";
 import { getLandingDatasetRepository } from "@/lib/db/repository";
 
 export const metadata: Metadata = {
-  title: "Қазақша Әндер Корпусы",
+  title: "Ән мәтіндерінің корпусы",
 };
 
 const citationSnippet = `@dataset{ankorpus_2026,
-  title={Әндер корпусы: Қазақ поп музыка мәтіндерінің аннотацияланған корпусы},
-  author={Әндер корпусы зерттеу тобы},
+  title={Ән мәтіндерінің корпусы: Қазақ поп музыка мәтіндерінің аннотацияланған корпусы},
+  author={Ән мәтіндерінің корпусы зерттеу тобы},
   year={2026},
   url={https://ankorpus.kz}
 }`;
@@ -28,7 +28,7 @@ export default async function Home() {
         <div className="section-shell grid items-center gap-12 lg:grid-cols-[1.08fr_1fr]">
           <div>
             <p className="section-kicker">Ғылыми платформа · Қаз corpus tech</p>
-            <h1 className="max-w-2xl">Қазақша Әндер Корпусы</h1>
+            <h1 className="max-w-2xl">Ән мәтіндерінің корпусы</h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-text-secondary sm:text-lg">
               15 000+ аннотацияланған мәтін · Ғылыми зерттеу платформасы.
               Қазақ тіліндегі поп музыка лирикасын іздеу, салыстыру және

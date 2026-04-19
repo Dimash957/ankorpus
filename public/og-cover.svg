@@ -9,6 +9,6 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <circle cx="930" cy="130" r="180" fill="#7C6FFF" fill-opacity="0.14"/>
   <circle cx="220" cy="520" r="220" fill="#3EC9A7" fill-opacity="0.13"/>
-  <text x="96" y="280" fill="#F0F0F5" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="600">Қазақша Әндер Корпусы</text>
+  <text x="96" y="280" fill="#F0F0F5" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="600">Ән мәтіндерінің корпусы</text>
   <text x="96" y="350" fill="#8888A0" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="400">Лингвистикалық зерттеу платформасы</text>
 </svg>

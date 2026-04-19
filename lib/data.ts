@@ -866,7 +866,7 @@ export function buildTeiXml(song: Song, artistName: string) {
     `        <author>${xmlEscape(artistName)}</author>`,
     "      </titleStmt>",
     "      <publicationStmt>",
-    "        <publisher>Әндер корпусы</publisher>",
+    "        <publisher>Ән мәтіндерінің корпусы</publisher>",
     "        <availability status=\"free\">CC BY-NC 4.0</availability>",
     "      </publicationStmt>",
     "      <sourceDesc>",

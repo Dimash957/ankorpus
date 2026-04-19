@@ -14,15 +14,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ankorpus.kz"),
   title: {
-    default: "Әндер корпусы",
-    template: "%s · Әндер корпусы",
+    default: "Ән мәтіндерінің корпусы",
+    template: "%s · Ән мәтіндерінің корпусы",
   },
   description: "Қазақ тіліндегі поп музыка мәтіндерін зерттеуге арналған аннотацияланған ғылыми платформа.",
   openGraph: {
-    title: "Әндер корпусы",
+    title: "Ән мәтіндерінің корпусы",
     description: "15 000+ аннотацияланған мәтін · ғылыми зерттеу платформасы",
     url: "https://ankorpus.kz",
-    siteName: "Әндер корпусы",
+    siteName: "Ән мәтіндерінің корпусы",
     locale: "kk_KZ",
     type: "website",
     images: [
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
         url: "/og-cover.svg",
         width: 1200,
         height: 630,
-        alt: "Қазақша Әндер Корпусы",
+        alt: "Ән мәтіндерінің корпусы",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Әндер корпусы",
+    title: "Ән мәтіндерінің корпусы",
     description: "Қазақ тіліндегі поп музыка мәтіндерінің аннотацияланған корпусы.",
     images: ["/og-cover.svg"],
   },

@@ -1,4 +1,4 @@
--- Әндер корпусы: demo seed
+-- Ән мәтіндерінің корпусы: demo seed
 
 insert into public.artists (slug, name, years_label, period_start, period_end, song_count, genres, summary)
 values

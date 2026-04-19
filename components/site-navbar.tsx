@@ -35,7 +35,7 @@ export function SiteNavbar({ userEmail }: SiteNavbarProps) {
             <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-accent-primary to-accent-secondary text-lg font-semibold text-white shadow-glow transition-transform duration-200 ease-in-out group-hover:scale-105">
               Ә
             </span>
-            <span className="text-base font-medium text-text-primary sm:text-lg">Әндер корпусы</span>
+            <span className="text-base font-medium text-text-primary sm:text-lg">Ән мәтіндерінің корпусы</span>
           </Link>
 
           <nav className="hidden items-center gap-2 lg:flex">

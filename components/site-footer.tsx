@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const citation = `@dataset{ankorpus_2026,
-  title={Әндер корпусы: Қазақ поп музыка мәтіндерінің аннотацияланған корпусы},
-  author={Әндер корпусы зерттеу тобы},
+  title={Ән мәтіндерінің корпусы: Қазақ поп музыка мәтіндерінің аннотацияланған корпусы},
+  author={Ән мәтіндерінің корпусы зерттеу тобы},
   year={2026},
   url={https://ankorpus.kz}
 }`;
@@ -14,7 +14,7 @@ export function SiteFooter() {
         <section>
           <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-text-secondary">Жоба туралы</h2>
           <p className="mt-4 text-sm leading-7 text-text-secondary">
-            «Әндер корпусы» - қазақ тіліндегі поп музыка мәтіндерін лингвистикалық зерттеуге
+            «Ән мәтіндерінің корпусы» - қазақ тіліндегі поп музыка мәтіндерін лингвистикалық зерттеуге
             арналған ашық ғылыми платформа.
           </p>
           <div className="mt-6 inline-flex items-center rounded-full border border-subtle bg-white/5 px-4 py-2 text-xs font-medium text-text-primary">
@@ -74,7 +74,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-subtle py-4 text-center text-xs text-text-secondary">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <span>© 2026 Әндер корпусы</span>
+          <span>© 2026 Ән мәтіндерінің корпусы</span>
           <div className="flex items-center gap-4">
             <Link href="/about" className="hover:text-text-primary">
               Privacy
