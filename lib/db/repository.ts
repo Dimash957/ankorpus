@@ -120,6 +120,7 @@ function songFromRow(row: SongRow): Song {
     tags: row.tags ?? [],
     chartsRank: row.charts_rank ?? 0,
     sections: normalizeSections(row.sections),
+    lyricsText: row.lyrics_text ?? undefined,
   };
 }
 

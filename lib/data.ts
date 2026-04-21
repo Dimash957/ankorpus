@@ -36,6 +36,7 @@ export interface Song {
   tags: string[];
   chartsRank: number;
   sections: SongSection[];
+  lyricsText?: string;
 }
 
 export interface AnnotationToken {
@@ -235,7 +236,7 @@ export const songs: Song[] = [
     title: "Көктемгі дауыс",
     artistSlug: "roza-rymbaeva",
     year: 1982,
-    genre: "поп",
+    genre: "эстрада",
     archiveType: "жеке мұрағат",
     tags: ["махаббат", "көктем", "эстрада"],
     chartsRank: 7,
@@ -766,7 +767,12 @@ export function getYearRange(sourceSongs: Song[] = songs) {
 }
 
 export function getSongText(song: Song) {
-  return song.sections.flatMap((section) => section.lines).join(" ");
+  const sectionText = song.sections.flatMap((section) => section.lines).join(" ").trim();
+  if (sectionText.length > 0) {
+    return sectionText;
+  }
+
+  return song.lyricsText?.trim() ?? "";
 }
 
 function normalizeWord(word: string) {
