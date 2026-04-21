@@ -185,6 +185,49 @@ function withPagination<T>(items: T[], filters: SongFilters) {
   return items.slice(offset, offset + limit);
 }
 
+function mergeUniqueSongs(primary: Song[], secondary: Song[]) {
+  const merged = [...primary];
+  const seen = new Set(primary.map((song) => song.id));
+
+  secondary.forEach((song) => {
+    if (seen.has(song.id)) {
+      return;
+    }
+
+    seen.add(song.id);
+    merged.push(song);
+  });
+
+  return merged;
+}
+
+function shouldSupplementFromFallback(filters: SongFilters, remoteSongs: Song[]) {
+  const offset = Math.max(0, filters.offset ?? 0);
+  if (offset > 0) {
+    return false;
+  }
+
+  if (remoteSongs.length === 0) {
+    return true;
+  }
+
+  if (filters.artistSlugs && filters.artistSlugs.length > 0 && remoteSongs.length < 3) {
+    return true;
+  }
+
+  const noQuery = !filters.query?.trim();
+  const noArtists = !filters.artistSlugs || filters.artistSlugs.length === 0;
+  const noGenres = !filters.genres || filters.genres.length === 0;
+  const noArchiveFilter = !filters.archiveType || filters.archiveType === "барлығы";
+  const noYearFilter = typeof filters.yearMin !== "number" && typeof filters.yearMax !== "number";
+
+  if (noQuery && noArtists && noGenres && noArchiveFilter && noYearFilter && remoteSongs.length < fallbackSongs.length) {
+    return true;
+  }
+
+  return false;
+}
+
 export async function getArtistsRepository() {
   const supabase = await createSupabaseServerClient();
   if (!supabase) {
@@ -270,7 +313,16 @@ export async function getSongsRepository(filters: SongFilters = {}) {
     return withPagination(local, filters);
   }
 
-  return (data as SongRow[]).map(songFromRow);
+  const remoteSongs = (data as SongRow[]).map(songFromRow);
+
+  if (!shouldSupplementFromFallback(filters, remoteSongs)) {
+    return remoteSongs;
+  }
+
+  const localMatches = filterSongsLocally(fallbackSongs, filters);
+  const merged = mergeUniqueSongs(remoteSongs, localMatches);
+  const supplementedLimit = Math.max(1, filters.limit ?? merged.length);
+  return merged.slice(0, supplementedLimit);
 }
 
 export async function getArtistBySlugRepository(slug: string) {

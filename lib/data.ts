@@ -737,6 +737,263 @@ export const songs: Song[] = [
   },
 ];
 
+const supplementalSongs: Song[] = [
+  {
+    id: "roza-3",
+    title: "Сағыныш самалы",
+    artistSlug: "roza-rymbaeva",
+    year: 2001,
+    genre: "эстрада",
+    archiveType: "аралас қор",
+    tags: ["сағыныш", "лирика", "эстрада"],
+    chartsRank: 15,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Кешкі самал естелікті қайта оятты",
+          "Көңілдегі бір әуенді баяу тербетті",
+          "Жылдар өтсе де жүректегі үн өшпеді",
+          "Сол бір шақтың нұры қайта сәуле септі",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Сағыныш самалы жанымды тербейді",
+          "Ескі әуенмен жаңа күнге жетелейді",
+        ],
+      },
+    ],
+  },
+  {
+    id: "batyrkhan-3",
+    title: "Қала шамдары",
+    artistSlug: "batyrkhan-shukenov",
+    year: 2007,
+    genre: "соул",
+    archiveType: "аралас қор",
+    tags: ["қала", "лирика", "шам"],
+    chartsRank: 13,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Қала шамы жаңбыр тамшысына шағылды",
+          "Көше бойы жүрек сыры үнсіз табылды",
+          "Түнгі ауа үнмен бірге баяу тыныстап",
+          "Әр аялдама саған қарай жақындатты",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Қала шамдары сөніп қайта жанады",
+          "Әр қайырма жүрекке жол табады",
+        ],
+      },
+    ],
+  },
+  {
+    id: "nurlan-3",
+    title: "Таңғы қоңыр",
+    artistSlug: "nurlan-onerbayev",
+    year: 2018,
+    genre: "дәстүрлі",
+    archiveType: "жеке мұрағат",
+    tags: ["қоңыр", "таң", "дәстүр"],
+    chartsRank: 19,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Таңғы қоңыр ауылымның үстін жапты",
+          "Домбыра үні даламенен бірге ақты",
+          "Көне сарын жаңа буын жүрегінде",
+          "Тамыр болып тереңінен қайта шықты",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Қоңыр үнмен таңды қарсы аламыз",
+          "Әр буында ата жолын жалғаймыз",
+        ],
+      },
+    ],
+  },
+  {
+    id: "imanbek-3",
+    title: "Neon Wave",
+    artistSlug: "imanbek-zeikenov",
+    year: 2025,
+    genre: "электро-поп",
+    archiveType: "тақырыптық мұрағат",
+    tags: ["neon", "wave", "beat"],
+    chartsRank: 5,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Неон толқын қала көшесін жарып өтті",
+          "Beat үстінде қысқа фраза анық жетті",
+          "Секунд сайын ырғақ ауысып тербеледі",
+          "Digital түн жаңа кодпен тыныс алды",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Wave жоғары, pulse қайта жанданды",
+          "Түнгі алаңда әр қозғалыс таң қалдырды",
+        ],
+      },
+    ],
+  },
+  {
+    id: "alibek-3",
+    title: "Күмбездегі үн",
+    artistSlug: "alibek-dinishev",
+    year: 2001,
+    genre: "классика",
+    archiveType: "аралас қор",
+    tags: ["академиялық", "ария", "күмбез"],
+    chartsRank: 26,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Күмбездегі үн кеңістікті терең ашты",
+          "Әр интервал уақыт бетін баяу басты",
+          "Көне поэма жаңа реңмен қайта туып",
+          "Сахнадағы тыныс өнермен үндес қалды",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Биік нота көкте ұзақ тербеледі",
+          "Классикада мәңгілік із көрінеді",
+        ],
+      },
+    ],
+  },
+  {
+    id: "dos-3",
+    title: "Сарыарқа жастары",
+    artistSlug: "dos-mukasan",
+    year: 1978,
+    genre: "рок",
+    archiveType: "жеке мұрағат",
+    tags: ["ансамбль", "жастар", "сарыарқа"],
+    chartsRank: 16,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Сарыарқа желі гитара үнімен ұласты",
+          "Жастар әні алаң толқып бірге сырласты",
+          "Домбыра мен рок ырғағы тоғысқанда",
+          "Көп жүректің бір арманға жолы ашылды",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Біз айтатын әндер жолға бастайды",
+          "Ортақ үндер жаңа буын жасайды",
+        ],
+      },
+    ],
+  },
+  {
+    id: "kairat-3",
+    title: "Жылы хат",
+    artistSlug: "kairat-nurtas",
+    year: 2022,
+    genre: "поп",
+    archiveType: "жеке мұрағат",
+    tags: ["махаббат", "хат", "лирика"],
+    chartsRank: 6,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Жылы хатты кешке қарай саған жолдадым",
+          "Әр сөйлемге жүрек үнін үнсіз қондырдым",
+          "Қарапайым сөздің өзі терең болатынын",
+          "Көздеріңнен сезіп барып қайта толғандым",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Жылы хатым саған ерте жетсінші",
+          "Бір ауыз сөз көңіліңе сеп болсыншы",
+        ],
+      },
+    ],
+  },
+  {
+    id: "sk-3",
+    title: "Тас квартал",
+    artistSlug: "skriptonit",
+    year: 2024,
+    genre: "хип-хоп",
+    archiveType: "тақырыптық мұрағат",
+    tags: ["квартал", "әлеумет", "урбан"],
+    chartsRank: 4,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Тас квартал үнін қабырға қайтарады",
+          "Әр бұрышта күннің салмағы айтылады",
+          "Ритм қатты, кадр баяу, ой анық",
+          "Көше мәтінін шындық қылып қайырамын",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Түнгі аудан тынысын беріп тұр",
+          "Әр буында көше сөзі көрініп тұр",
+        ],
+      },
+    ],
+  },
+  {
+    id: "jel-3",
+    title: "Қала жаңбыры",
+    artistSlug: "jeltoksan",
+    year: 2021,
+    genre: "инди-поп",
+    archiveType: "аралас қор",
+    tags: ["жаңбыр", "инди", "қала"],
+    chartsRank: 9,
+    sections: [
+      {
+        type: "verse",
+        lines: [
+          "Қала жаңбыры терезеге ырғақ салды",
+          "Біз іздеген мағынаға жаңа ат берді",
+          "Қысқа жолдар ұзақ ойды алып шықты",
+          "Күннің соңғы жарығы да үнге айналды",
+        ],
+      },
+      {
+        type: "chorus",
+        lines: [
+          "Жаңбырменен қала қайта оянады",
+          "Инди үндер ертеңге жол табады",
+        ],
+      },
+    ],
+  },
+];
+
+songs.push(...supplementalSongs);
+
 export function getArtistBySlug(slug: string) {
   return artists.find((artist) => artist.slug === slug);
 }
@@ -1007,6 +1264,349 @@ export function getSongLevelMetrics(sourceSongs: Song[] = songs) {
       year: song.year,
     };
   });
+}
+
+export interface DistributionStat {
+  label: string;
+  count: number;
+  share: number;
+}
+
+export interface MorphologicalAnalysis {
+  totalTokens: number;
+  uniqueLemmas: number;
+  posDistribution: DistributionStat[];
+  namedEntityDistribution: DistributionStat[];
+}
+
+export interface LexicalAnalysis {
+  totalWords: number;
+  uniqueWords: number;
+  typeTokenRatio: number;
+  avgWordLength: number;
+  hapaxShare: number;
+  topWords: Array<{ word: string; count: number }>;
+}
+
+export interface SyntacticAnalysis {
+  totalLines: number;
+  avgWordsPerLine: number;
+  longLineShare: number;
+  complexLineShare: number;
+  punctuationPerLine: number;
+  conjunctionDensity: number;
+  avgSectionsPerSong: number;
+}
+
+export interface ArtistAnalysisProfile {
+  morphological: MorphologicalAnalysis;
+  lexical: LexicalAnalysis;
+  syntactic: SyntacticAnalysis;
+}
+
+export interface ArtistComparisonMetric {
+  label: string;
+  unit: string;
+  current: number;
+  compared: number;
+  delta: number;
+}
+
+export interface ArtistComparisonResult {
+  similarityScore: number;
+  sharedTopWords: string[];
+  metrics: ArtistComparisonMetric[];
+}
+
+const LEXICAL_STOP_WORDS = new Set([
+  "мен",
+  "сен",
+  "біз",
+  "ол",
+  "олар",
+  "және",
+  "бірақ",
+  "үшін",
+  "туралы",
+  "ғана",
+  "тағы",
+  "де",
+  "да",
+  "бұл",
+  "сол",
+  "бір",
+]);
+
+const CONJUNCTION_LEMMAS = new Set(["және", "бірақ", "не", "немесе", "әлде", "да", "де"]);
+
+function toFixedNumber(value: number, digits = 2) {
+  if (!Number.isFinite(value)) {
+    return 0;
+  }
+
+  return Number(value.toFixed(digits));
+}
+
+function safePercent(numerator: number, denominator: number) {
+  if (denominator <= 0) {
+    return 0;
+  }
+
+  return toFixedNumber((numerator / denominator) * 100, 2);
+}
+
+function safeAverage(sum: number, count: number) {
+  if (count <= 0) {
+    return 0;
+  }
+
+  return toFixedNumber(sum / count, 2);
+}
+
+function buildDistribution(map: Map<string, number>, total: number, limit = 8): DistributionStat[] {
+  if (total <= 0) {
+    return [];
+  }
+
+  return [...map.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit)
+    .map(([label, count]) => ({
+      label,
+      count,
+      share: safePercent(count, total),
+    }));
+}
+
+function collectSongLines(sourceSongs: Song[]) {
+  const lines: string[] = [];
+
+  sourceSongs.forEach((song) => {
+    const sectionLines = song.sections.flatMap((section) => section.lines).filter(Boolean);
+
+    if (sectionLines.length > 0) {
+      lines.push(...sectionLines);
+      return;
+    }
+
+    const fallbackText = getSongText(song);
+    if (!fallbackText) {
+      return;
+    }
+
+    const splitLines = fallbackText
+      .split(/[.!?]+/g)
+      .map((line) => line.trim())
+      .filter(Boolean);
+
+    if (splitLines.length > 0) {
+      lines.push(...splitLines);
+    } else {
+      lines.push(fallbackText);
+    }
+  });
+
+  return lines;
+}
+
+function collectAnnotationTokens(sourceSongs: Song[]) {
+  return collectSongLines(sourceSongs).flatMap((line) => annotateLine(line));
+}
+
+function posShare(profile: ArtistAnalysisProfile, pos: string) {
+  return profile.morphological.posDistribution.find((item) => item.label === pos)?.share ?? 0;
+}
+
+export function getMorphologicalAnalysis(sourceSongs: Song[] = songs): MorphologicalAnalysis {
+  const annotations = collectAnnotationTokens(sourceSongs);
+  const totalTokens = annotations.length;
+  const uniqueLemmas = new Set(annotations.map((token) => token.lemma).filter(Boolean)).size;
+
+  const posMap = new Map<string, number>();
+  const entityMap = new Map<string, number>();
+
+  annotations.forEach((token) => {
+    posMap.set(token.pos, (posMap.get(token.pos) ?? 0) + 1);
+    entityMap.set(token.namedEntity, (entityMap.get(token.namedEntity) ?? 0) + 1);
+  });
+
+  const namedEntityDistribution = buildDistribution(entityMap, totalTokens, 5).filter((item) => item.label !== "O");
+
+  return {
+    totalTokens,
+    uniqueLemmas,
+    posDistribution: buildDistribution(posMap, totalTokens, 8),
+    namedEntityDistribution,
+  };
+}
+
+export function getLexicalAnalysis(sourceSongs: Song[] = songs): LexicalAnalysis {
+  const annotations = collectAnnotationTokens(sourceSongs);
+  const lemmas = annotations.map((token) => token.lemma).filter(Boolean);
+  const totalWords = lemmas.length;
+  const uniqueWords = new Set(lemmas).size;
+
+  const wordFrequency = new Map<string, number>();
+  lemmas.forEach((lemma) => {
+    if (lemma.length < 2 || LEXICAL_STOP_WORDS.has(lemma)) {
+      return;
+    }
+
+    wordFrequency.set(lemma, (wordFrequency.get(lemma) ?? 0) + 1);
+  });
+
+  const hapaxCount = [...wordFrequency.values()].filter((count) => count === 1).length;
+  const avgWordLength = safeAverage(
+    lemmas.reduce((sum, lemma) => sum + lemma.length, 0),
+    totalWords,
+  );
+
+  return {
+    totalWords,
+    uniqueWords,
+    typeTokenRatio: safePercent(uniqueWords, totalWords),
+    avgWordLength,
+    hapaxShare: safePercent(hapaxCount, uniqueWords),
+    topWords: [...wordFrequency.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 10)
+      .map(([word, count]) => ({ word, count })),
+  };
+}
+
+export function getSyntacticAnalysis(sourceSongs: Song[] = songs): SyntacticAnalysis {
+  const lines = collectSongLines(sourceSongs);
+  const wordCounts = lines.map((line) => tokenize(line).length);
+  const totalWords = wordCounts.reduce((sum, value) => sum + value, 0);
+  const longLineCount = wordCounts.filter((count) => count >= 9).length;
+
+  const complexLineCount = lines.filter((line) => {
+    const tokens = annotateLine(line);
+    const hasConjunction = tokens.some((token) => CONJUNCTION_LEMMAS.has(token.lemma));
+    const hasClauseMarkers = /[,;:]/.test(line);
+    return hasConjunction || hasClauseMarkers || tokenize(line).length >= 11;
+  }).length;
+
+  const punctuationCount = lines.reduce((sum, line) => sum + (line.match(/[.,!?;:]/g) ?? []).length, 0);
+  const conjunctionCount = lines
+    .flatMap((line) => annotateLine(line))
+    .filter((token) => CONJUNCTION_LEMMAS.has(token.lemma)).length;
+
+  const totalSections = sourceSongs.reduce((sum, song) => sum + song.sections.length, 0);
+
+  return {
+    totalLines: lines.length,
+    avgWordsPerLine: safeAverage(totalWords, lines.length),
+    longLineShare: safePercent(longLineCount, lines.length),
+    complexLineShare: safePercent(complexLineCount, lines.length),
+    punctuationPerLine: safeAverage(punctuationCount, lines.length),
+    conjunctionDensity: safePercent(conjunctionCount, totalWords),
+    avgSectionsPerSong: safeAverage(totalSections, sourceSongs.length),
+  };
+}
+
+export function getArtistAnalysisProfile(sourceSongs: Song[] = songs): ArtistAnalysisProfile {
+  return {
+    morphological: getMorphologicalAnalysis(sourceSongs),
+    lexical: getLexicalAnalysis(sourceSongs),
+    syntactic: getSyntacticAnalysis(sourceSongs),
+  };
+}
+
+function computeSimilarityScore(current: ArtistAnalysisProfile, compared: ArtistAnalysisProfile) {
+  const penalties = [
+    Math.abs(current.lexical.typeTokenRatio - compared.lexical.typeTokenRatio),
+    Math.abs(current.lexical.avgWordLength - compared.lexical.avgWordLength) * 10,
+    Math.abs(current.syntactic.avgWordsPerLine - compared.syntactic.avgWordsPerLine) * 8,
+    Math.abs(current.syntactic.conjunctionDensity - compared.syntactic.conjunctionDensity),
+    Math.abs(posShare(current, "NOUN") - posShare(compared, "NOUN")),
+    Math.abs(posShare(current, "VERB") - posShare(compared, "VERB")),
+  ];
+
+  const penalty = safeAverage(penalties.reduce((sum, item) => sum + item, 0), penalties.length);
+  return toFixedNumber(Math.max(0, 100 - penalty), 2);
+}
+
+export function compareArtistProfiles(currentSongs: Song[], comparedSongs: Song[]): ArtistComparisonResult {
+  const current = getArtistAnalysisProfile(currentSongs);
+  const compared = getArtistAnalysisProfile(comparedSongs);
+
+  const currentTopWords = new Set(current.lexical.topWords.map((item) => item.word));
+  const comparedTopWords = new Set(compared.lexical.topWords.map((item) => item.word));
+
+  const sharedTopWords = [...currentTopWords].filter((word) => comparedTopWords.has(word));
+
+  const metrics: ArtistComparisonMetric[] = [
+    {
+      label: "Барлық сөз",
+      unit: "сөз",
+      current: current.lexical.totalWords,
+      compared: compared.lexical.totalWords,
+      delta: current.lexical.totalWords - compared.lexical.totalWords,
+    },
+    {
+      label: "Бірегей сөз",
+      unit: "сөз",
+      current: current.lexical.uniqueWords,
+      compared: compared.lexical.uniqueWords,
+      delta: current.lexical.uniqueWords - compared.lexical.uniqueWords,
+    },
+    {
+      label: "Type/Token",
+      unit: "%",
+      current: current.lexical.typeTokenRatio,
+      compared: compared.lexical.typeTokenRatio,
+      delta: toFixedNumber(current.lexical.typeTokenRatio - compared.lexical.typeTokenRatio, 2),
+    },
+    {
+      label: "Орташа сөз ұзындығы",
+      unit: "таңба",
+      current: current.lexical.avgWordLength,
+      compared: compared.lexical.avgWordLength,
+      delta: toFixedNumber(current.lexical.avgWordLength - compared.lexical.avgWordLength, 2),
+    },
+    {
+      label: "Орташа сөз/жол",
+      unit: "сөз",
+      current: current.syntactic.avgWordsPerLine,
+      compared: compared.syntactic.avgWordsPerLine,
+      delta: toFixedNumber(current.syntactic.avgWordsPerLine - compared.syntactic.avgWordsPerLine, 2),
+    },
+    {
+      label: "Күрделі жол үлесі",
+      unit: "%",
+      current: current.syntactic.complexLineShare,
+      compared: compared.syntactic.complexLineShare,
+      delta: toFixedNumber(current.syntactic.complexLineShare - compared.syntactic.complexLineShare, 2),
+    },
+    {
+      label: "Зат есім үлесі",
+      unit: "%",
+      current: posShare(current, "NOUN"),
+      compared: posShare(compared, "NOUN"),
+      delta: toFixedNumber(posShare(current, "NOUN") - posShare(compared, "NOUN"), 2),
+    },
+    {
+      label: "Етістік үлесі",
+      unit: "%",
+      current: posShare(current, "VERB"),
+      compared: posShare(compared, "VERB"),
+      delta: toFixedNumber(posShare(current, "VERB") - posShare(compared, "VERB"), 2),
+    },
+    {
+      label: "Байланыстырушы тығыздығы",
+      unit: "%",
+      current: current.syntactic.conjunctionDensity,
+      compared: compared.syntactic.conjunctionDensity,
+      delta: toFixedNumber(current.syntactic.conjunctionDensity - compared.syntactic.conjunctionDensity, 2),
+    },
+  ];
+
+  return {
+    similarityScore: computeSimilarityScore(current, compared),
+    sharedTopWords,
+    metrics,
+  };
 }
 
 export const archiveTypeOptions: ArchiveType[] = ["жеке мұрағат", "тақырыптық мұрағат", "аралас қор"];

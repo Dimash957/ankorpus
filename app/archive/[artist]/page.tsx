@@ -4,6 +4,7 @@ import { ArchiveExplorer } from "@/components/archive-explorer";
 import {
   getArtistBySlugRepository,
   getArtistsRepository,
+  getSongsRepository,
   getSongsByArtistRepository,
 } from "@/lib/db/repository";
 
@@ -38,7 +39,11 @@ export default async function ArchiveArtistPage({ params }: RouteProps) {
     notFound();
   }
 
-  const artistSongs = await getSongsByArtistRepository(record.slug);
+  const [artistSongs, allArtists, allSongs] = await Promise.all([
+    getSongsByArtistRepository(record.slug),
+    getArtistsRepository(),
+    getSongsRepository({ limit: 5000 }),
+  ]);
 
   return (
     <div className="section-shell py-10 sm:py-14">
@@ -51,7 +56,7 @@ export default async function ArchiveArtistPage({ params }: RouteProps) {
         </p>
       </header>
 
-      <ArchiveExplorer artist={record} songs={artistSongs} />
+      <ArchiveExplorer artist={record} songs={artistSongs} allArtists={allArtists} allSongs={allSongs} />
     </div>
   );
 }
